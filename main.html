@@ -8,50 +8,36 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div class="book-library">
-		<h1>Book Library</h1>
-		<div class="library"></div>
-		<div class="book">
-			<img 
-			src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg"
-			alt="spy in the amber"
-			style="justify-content: center;"
-			>
-			<h2>SPY IN THE AMBER</h2>
-			<p class="author">BY Manohar Malgonkar</p>
-			
-				<button type="button" value="299" class="price-block">Rs. 299</button>
-			
-		</div
-
-		<div class="library"></div>
-		<div class="book">
-			<img 
-			src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg"
-			alt="sacred games"
-			>
-			<h2>Sacred Games</h2>
-			<p class="author">by Vikram Chandra</p>
-			
-				<button type="button" value="199" class="price-block">Rs. 199</button>
-			
-		</div
-
-		<div class="library"></div>
-		<div class="book">
-			<img 
-			src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg"
-			alt="spy in the amber"
-			>
-			<h2>BYOMKESH BAKSHI</h2>
-			<p class="author">By Sharadindu Bandyopadyay</p>
-			
-				<button type="button" value="249" class="price-block">Rs. 249</button>
-			
-		</div
-	</div>
     <script type="text/javascript" src="./script.js">
 </script>
+	<h1>MyBookList</h1>
+	<div class=form-group>
+		<form method="post">
+			<label for="title">Title</label><br>
+			<input id="title" type="text">
+			<br>
+			<label for="author">Autho</label><br>
+			<input id="author" type="text">
+			<br>
+			<label for="isbn">ISBN#</label><br>
+			<input id="isbn" type="text">
+			<br><br>
+			<input type="submit" id="submit" value="Add Book" style="background-color:blue">
+		</form>
+	</div>
+
+	<table class="table table-striped">
+		thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN#</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list">
+      </tbody>
+	</table>
 
 </body>
 
