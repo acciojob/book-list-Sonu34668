@@ -1,47 +1,3 @@
-<!-- <!DOCTYPE html>
-
-<html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student 
-    <script type="text/javascript" src="./script.js">
-</script>
-	<h1>MyBookList</h1>
-	<div class=form-group>
-		<form method="post">
-			<label for="title">Title</label><br>
-			<input id="title" type="text">
-			<br>
-			<label for="author">Autho</label><br>
-			<input id="author" type="text">
-			<br>
-			<label for="isbn">ISBN#</label><br>
-			<input id="isbn" type="text">
-			<br><br>
-			<input type="submit" id="submit" value="Add Book" style="background-color:blue">
-		</form>
-	</div>
-
-	<table class="table table-striped">
-	
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>ISBN#</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody id="book-list">
-      </tbody>
-	</table>
-
-</body>
-
-</html> -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,20 +5,20 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-	<div class="container">
+<h1>My Book List</h1>
+	<div class="form group">
 		<label for="Title">Title</label>
-		<input type="text" name="Title" id="Title">
+		<input type="text" name="Title" id="title">
 		<label for="lname">Author</label>
-		<input type="text" name="Author" id="Author">
+		<input type="text" name="Author" id="author">
 		<label for="email">ISBN#</label>
-		<input type="text" name="ISBN#" id="ISBN#">
-		<input type="button" name="button" id="btn" value="Add Book" onclick="AddRow()">
+		<input type="text" name="ISBN#" id="isbn">
+		<input type="button" name="button" id="submit" value="Add Book" onclick="AddRow()">
 		
 
 	</div>
 
-		<table id="show">
+		<table id="book-list">
 			
 				<tr>
 					<th>Title</th>
